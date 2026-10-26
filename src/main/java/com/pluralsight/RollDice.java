@@ -13,13 +13,26 @@ public class RollDice {
         int rolledSix = 0;
         int rolledSeven = 0;
 
-
-        while (count < 100){
+        // Loop
+        while (count < 101){
             roll1 = dice.roll();
             roll2 = dice.roll();
             int sum = roll1 + roll2;
             System.out.println("Roll" + count + ":" + roll1 + " + " + roll2 + " Sum: " + sum);
+            if (sum == 2){
+                rolledTwo++;
+            } else if (sum == 4) {
+                rolledFour++;
+            } else if (sum == 6) {
+                rolledSix++;
+            } else if (sum == 7) {
+                rolledSeven++;
+            }
             count++;
         }
+        System.out.println("Sum of 2 happened: " + rolledTwo);
+        System.out.println("Sum of 4 happened: " + rolledFour);
+        System.out.println("Sum of 6 happened: " + rolledSix);
+        System.out.println("Sum of 7 happened: " + rolledSeven);
     }
 }
