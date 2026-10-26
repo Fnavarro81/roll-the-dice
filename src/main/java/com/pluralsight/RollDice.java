@@ -19,6 +19,7 @@ public class RollDice {
             roll2 = dice.roll();
             int sum = roll1 + roll2;
             System.out.println("Roll" + count + ":" + roll1 + " + " + roll2 + " Sum: " + sum);
+            // Specific sum of
             if (sum == 2){
                 rolledTwo++;
             } else if (sum == 4) {
@@ -30,6 +31,8 @@ public class RollDice {
             }
             count++;
         }
+
+        // SUm of print out
         System.out.println("Sum of 2 happened: " + rolledTwo);
         System.out.println("Sum of 4 happened: " + rolledFour);
         System.out.println("Sum of 6 happened: " + rolledSix);
